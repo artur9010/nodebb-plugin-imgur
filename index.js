@@ -57,7 +57,7 @@ var async = require.main.require('async');
 		}
 
 		var options = {
-			url: 'https://sia.pixeldrain.com/api/file',
+			url: 'https://pixeldrain.com/api/file',
 			formData: {
 				file: formDataImage
 			}
@@ -79,7 +79,7 @@ var async = require.main.require('async');
 			if (response.success) {
 				return callback(null, {
 					name: image.name,
-					url: "https://sia.pixeldrain.com/api/file/" + response.id
+					url: "https://pixeldrain.com/api/file/" + response.id
 				});
 			}
 
